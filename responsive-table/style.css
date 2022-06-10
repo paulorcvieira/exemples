@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body {
+  background: #6200EA;
+  margin: 0;
+  padding: 30px;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: 4vw;
+}
+.table-responsive {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: Roboto, sans-serif;
+}
+.table-responsive thead {
+  background: #C5CAE9;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.table-responsive tr {
+  border-bottom: 1px solid #eee;
+}
+.table-responsive td, .table-responsive th {
+  color: #555;
+  padding: 8px 10px;
+}
+@media (max-width: 768px) {
+  .table-responsive {
+    background: none;
+    box-shadow: none;
+  }
+  .table-responsive thead {
+    display: none;
+  }
+  .table-responsive tbody tr {
+    display: block;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .table-responsive tbody tr td {
+    display: block;
+  }
+  .table-responsive tbody tr td:before {
+    content: attr(th) ":";
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+    color: #333;
+  }
+}
